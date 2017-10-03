@@ -11,7 +11,7 @@
   clear: both;
 }
 
-.rkinfospan101,.rkinfospan101 .rkinfospan101_icon,.rkinfospan101 .rkinfospan101_icon svg,.rkinfospan102,.rkinfospan102 .rkinfospan102_icon,.rkinfospan102 .rkinfospan102_icon svg,.rkinfospan103,.rkinfospan103 .rkinfospan103_icon,.rkinfospan103 .rkinfospan103_icon svg {
+.rkinfospan101,.rkinfospan101 .rkinfospan101_icon,.rkinfospan101 .rkinfospan101_icon svg,.rkinfospan102,.rkinfospan102 .rkinfospan102_icon,.rkinfospan102 .rkinfospan102_icon svg,.rkinfospan103,.rkinfospan103 .rkinfospan103_icon,.rkinfospan103 .rkinfospan103_icon svg,.rkinfospan103 .rkinfospan103_commentbadge {
   display: inline-block;
 }
 
@@ -26,6 +26,10 @@ html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,s,[type="reset"],[type="submit"] {
 
 .rkinfospan101,.rkinfospan102,.rkinfospan103 {
   padding: 4px;
+}
+
+.rkinfospan103 .rkinfospan103_commentbadge {
+  border-radius: 4px;
 }
 
 *,*:before,*:after {
@@ -313,6 +317,10 @@ body {
   fill: #2c2d32;
 }
 
+.rkinfospan102 .rkinfospan102_separator {
+  background-color: #c0c0c0;
+}
+
 .rkinfospan102 {
   font-size: 14px;
   font-size: 0.875rem;
@@ -332,13 +340,27 @@ body {
   height: 18px;
 }
 
+.rkinfospan102 .rkinfospan102_separator {
+  margin: 0 6px 0 6px;
+  /* trbl */
+  width: 1px;
+}
+
 @media (min-width: 20em) {
+  .rkinfospan102 .rkinfospan102_separator {
+    display: none;
+  }
+
   .rkinfospan102 p {
     display: block;
   }
 }
 
 @media (min-width: 30em) {
+  .rkinfospan102 .rkinfospan102_separator {
+    display: inline-block;
+  }
+
   .rkinfospan102 p {
     display: inline-block;
   }
@@ -355,6 +377,18 @@ body {
 
 .rkinfospan103 a,.rkinfospan103 date {
   color: #c32349;
+}
+
+.rkinfospan103 .rkinfospan103_commentbadge {
+  background-color: #c32349;
+}
+
+.rkinfospan103 .rkinfospan103_commentbadge a {
+  color: #fff;
+}
+
+.rkinfospan103 .rkinfospan103_separator {
+  background-color: #c0c0c0;
 }
 
 .rkinfospan103 {
@@ -376,13 +410,32 @@ body {
   height: 18px;
 }
 
+.rkinfospan103 .rkinfospan103_separator {
+  margin: 0 6px 0 6px;
+  /* trbl */
+  width: 1px;
+}
+
+.rkinfospan103 .rkinfospan103_commentbadge {
+  padding: 2px 4px 2px 4px;
+  /* trbl */
+}
+
 @media (min-width: 20em) {
+  .rkinfospan103 .rkinfospan103_separator {
+    display: none;
+  }
+
   .rkinfospan103 p {
     display: block;
   }
 }
 
 @media (min-width: 30em) {
+  .rkinfospan103 .rkinfospan103_separator {
+    display: inline-block;
+  }
+
   .rkinfospan103 p {
     display: inline-block;
   }
