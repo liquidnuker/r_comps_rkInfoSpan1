@@ -356,6 +356,94 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+function RkInfoSpan101_author(props) {
+  return React.createElement(
+    "p",
+    null,
+    React.createElement(
+      "span",
+      { className: "rkinfospan101_icon" },
+      React.createElement(
+        "svg",
+        { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" },
+        React.createElement("path", { d: "M15 2H3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zM9 4.75c1.24 0 2.25 1.01 2.25 2.25S10.24 9.25 9 9.25 6.75 8.24 6.75 7 7.76 4.75 9 4.75zM13.5 14h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V14z" })
+      )
+    ),
+    "Posted by:\xA0",
+    React.createElement(
+      "a",
+      { href: "" },
+      "Author"
+    )
+  );
+}
+
+function RkInfoSpan101_date(props) {
+  return React.createElement(
+    "p",
+    null,
+    React.createElement(
+      "span",
+      { className: "rkinfospan101_icon" },
+      React.createElement(
+        "svg",
+        { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" })
+      )
+    ),
+    "Date:\xA0",
+    React.createElement(
+      "date",
+      null,
+      "Today"
+    )
+  );
+}
+
+function RkInfoSpan101_category(props) {
+  return React.createElement(
+    "p",
+    null,
+    React.createElement(
+      "span",
+      { className: "rkinfospan101_icon" },
+      React.createElement(
+        "svg",
+        { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" })
+      )
+    ),
+    "Category:\xA0",
+    React.createElement(
+      "a",
+      { href: "" },
+      "categoryname"
+    )
+  );
+}
+
+function RkInfoSpan101_comments(props) {
+  return React.createElement(
+    "p",
+    null,
+    React.createElement(
+      "span",
+      { className: "rkinfospan101_icon" },
+      React.createElement(
+        "svg",
+        { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
+        React.createElement("path", { d: "M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z" })
+      )
+    ),
+    "Comments:\xA0",
+    React.createElement(
+      "a",
+      { href: "" },
+      props.pr_commentNum
+    )
+  );
+}
+
 var RkrkInfoSpan101 = function (_React$Component) {
   _inherits(RkrkInfoSpan101, _React$Component);
 
@@ -365,7 +453,7 @@ var RkrkInfoSpan101 = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (RkrkInfoSpan101.__proto__ || Object.getPrototypeOf(RkrkInfoSpan101)).call(this, props));
 
     _this.state = {
-      // property1: ""
+      commentNum: 27
     };
 
     // 
@@ -393,82 +481,10 @@ var RkrkInfoSpan101 = function (_React$Component) {
       return React.createElement(
         "div",
         { className: "rkinfospan101", role: "contentinfo" },
-        React.createElement(
-          "p",
-          null,
-          React.createElement(
-            "span",
-            { className: "rkinfospan101_icon" },
-            React.createElement(
-              "svg",
-              { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 18 18" },
-              React.createElement("path", { d: "M15 2H3c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zM9 4.75c1.24 0 2.25 1.01 2.25 2.25S10.24 9.25 9 9.25 6.75 8.24 6.75 7 7.76 4.75 9 4.75zM13.5 14h-9v-.75c0-1.5 3-2.25 4.5-2.25s4.5.75 4.5 2.25V14z" })
-            )
-          ),
-          "Posted by:\xA0",
-          React.createElement(
-            "a",
-            { href: "" },
-            "Author"
-          )
-        ),
-        React.createElement(
-          "p",
-          null,
-          React.createElement(
-            "span",
-            { className: "rkinfospan101_icon" },
-            React.createElement(
-              "svg",
-              { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z" })
-            )
-          ),
-          "Date:\xA0",
-          React.createElement(
-            "date",
-            null,
-            "Today"
-          )
-        ),
-        React.createElement(
-          "p",
-          null,
-          React.createElement(
-            "span",
-            { className: "rkinfospan101_icon" },
-            React.createElement(
-              "svg",
-              { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" })
-            )
-          ),
-          "Category:\xA0",
-          React.createElement(
-            "a",
-            { href: "" },
-            "categoryname"
-          )
-        ),
-        React.createElement(
-          "p",
-          null,
-          React.createElement(
-            "span",
-            { className: "rkinfospan101_icon" },
-            React.createElement(
-              "svg",
-              { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 24 24" },
-              React.createElement("path", { d: "M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z" })
-            )
-          ),
-          "Comments:\xA0",
-          React.createElement(
-            "a",
-            { href: "" },
-            "27"
-          )
-        )
+        React.createElement(RkInfoSpan101_author, null),
+        React.createElement(RkInfoSpan101_date, null),
+        React.createElement(RkInfoSpan101_category, null),
+        React.createElement(RkInfoSpan101_comments, { pr_commentNum: this.state.commentNum })
       );
     }
   }]);
