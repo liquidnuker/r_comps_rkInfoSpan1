@@ -9,10 +9,9 @@ const extractCSS = new ExtractTextPlugin('../[name].bundle.css');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
-  entry: {
-    index: './index.jsx'
-    // vendor: ['jquery', 'lodash']
-  },
+  // Map, Set, requestAnimationFrame <IE11 polyfill
+  // entry: ['babel-polyfill', './index.jsx'],
+  entry: ['./index.jsx'],
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: "dist/",
