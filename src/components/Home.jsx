@@ -9,7 +9,7 @@ export default function Home(props) {
   {/*rkInfoSpan101*/}
     <h2 className="item-id">rkinfoSpan101</h2>
     <div className="row">
-      <div className="col-sm-3">39</div>
+      <div className="col-sm-3">&nbsp;</div>
       <div className="col-sm-9">
       <RkInfoSpan101 />
       </div>
@@ -18,7 +18,7 @@ export default function Home(props) {
   {/*rkInfoSpan102*/}
     <h2 className="item-id">rkinfoSpan102</h2>
     <div className="row">
-      <div className="col-sm-3">39</div>
+      <div className="col-sm-3">&nbsp;</div>
       <div className="col-sm-9">
       <RkInfoSpan102 />
       </div>
@@ -27,7 +27,7 @@ export default function Home(props) {
   {/*rkInfoSpan103*/}
     <h2 className="item-id">rkinfoSpan103</h2>
     <div className="row">
-      <div className="col-sm-3">39</div>
+      <div className="col-sm-3">&nbsp;</div>
       <div className="col-sm-9">
       <RkInfoSpan103 />
       </div>
